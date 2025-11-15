@@ -682,6 +682,28 @@ footer .menu li {
     }
 }
 
+.betrokkenen-slider {
+    margin-top: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    /* @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    } */
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 .bestuur-titles {
     text-align: center;
 }
