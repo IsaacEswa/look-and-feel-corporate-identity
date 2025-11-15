@@ -225,12 +225,13 @@ header {
         flex-direction: row-reverse;
         gap: 7%;
         display: flex;
+        justify-content: flex-end;
     }
 }
 
 .featured-half-content {
     @media (min-width: 1024px) {
-        max-width: 40%;
+        max-width: 100%;
     }
 }
 
@@ -243,6 +244,10 @@ header {
 
     @media (min-width: 768px) {
         width: 100%;
+    }
+
+    @media (min-width: 1024px) {
+        width: 50%;
     }
 }
 
