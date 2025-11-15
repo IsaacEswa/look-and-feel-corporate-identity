@@ -1,0 +1,742 @@
+:root {
+    --groen: #347172;
+    --oranje: #a63716;
+    --donkergroen: #1B4243;
+
+    --animationSpeed: 20s;
+    --paddingsidesMobile: 0 15px;
+    --paddingsidesTablet: 0 50px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans";
+
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    background: #FAF9F6;
+    /* padding: 0 15px; */
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+}
+
+.hideondesktop {
+    display: block;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.hideonmobile {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+
+.hero {
+    background-image: url("../assets/hero-bg.jpg");
+    padding-top: 65px;
+    padding-bottom: 130px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-width: 768px) {
+        padding: 70px 50px 150px;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 100px 50px 120px;
+    }
+}
+
+.hero * {
+    @media (min-width: 1200px) {
+        max-width: 45%;
+    }
+}
+
+.hero h1,
+.hero p {
+    color: white;
+}
+
+h1 {
+
+    @media (min-width: 768px) {
+        font-size: 2em;
+        line-height: 1.3;
+    }
+
+}
+
+h2,
+h3 {
+    color: var(--donkergroen);
+    margin-bottom: 10px;
+}
+
+h1,
+h3 {
+    font-family: Inter;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--groen);
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    font-weight: 300;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+a:hover,
+a:focus {
+    color: #cccccc;
+    transition: 0.2s;
+}
+
+.subtitle {
+    border: 1px solid var(--oranje);
+    display: inline-block;
+    padding: 10px 15px;
+    color: var(--oranje);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        padding: 20px 50px;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+.sidebar li,
+.sidebar a {
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7em;
+    align-items: center;
+
+
+    /* @media (min-width: 768px) and (max-width: 1024px) {
+        flex-wrap: wrap;
+    } */
+}
+
+
+
+.featured-half,
+.home-nieuws,
+.featured-half-rev,
+.bestuur-section {
+    padding: var(--paddingsidesMobile);
+    margin-top: 60px;
+
+    @media (min-width: 768px) {
+        padding: var(--paddingsidesTablet);
+    }
+
+}
+
+.featured-half,
+.featured-half-rev {
+    .btn-primair {
+        margin-top: 10px;
+    }
+
+    @media (min-width: 768px) {
+        align-items: center;
+    }
+}
+
+.featured-half {
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        gap: 7%;
+        display: flex;
+    }
+}
+
+.featured-half-rev {
+    @media (min-width: 1024px) {
+        flex-direction: row-reverse;
+        gap: 7%;
+        display: flex;
+    }
+}
+
+.featured-half-content {
+    @media (min-width: 1024px) {
+        max-width: 40%;
+    }
+}
+
+.featured-half-img-container {
+    position: relative;
+
+    img {
+        border-radius: 15px;
+    }
+
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+}
+
+.bottom-img {
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        width: 85% !important;
+    }
+
+}
+
+.top-img {
+    display: none;
+
+
+    @media (min-width: 1024px) {
+        width: 30% !important;
+        height: 60% !important;
+        position: absolute;
+        z-index: 2;
+        right: 5%;
+        bottom: 10%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        display: block;
+    }
+
+
+}
+
+
+.nav-search {
+    padding: 13px;
+    border-radius: 25px;
+    border: none;
+    background: var(--groen);
+    color: white;
+}
+
+.nav-search::placeholder {
+    color: white;
+}
+
+.nav-search::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+}
+
+
+#hamburger-icon {
+    text-align: right;
+    list-style: none;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+#close-icon {
+    text-align: right;
+    padding-right: 15px;
+    margin-top: -5px;
+}
+
+#close-icon,
+#hamburger-icon {
+    cursor: pointer;
+    line-height: 0;
+}
+
+
+/* BEGIN LOGO'S */
+.logo-primair {
+    display: none;
+
+    @media (min-width: 1024px) {
+        max-width: 300px;
+        /* object-fit: contain; */
+        display: block;
+        /* text-align: left; */
+    }
+}
+
+.logo-secundair {
+    width: 50px;
+    display: block;
+    object-fit: contain;
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+
+
+.navigation {
+    display: none;
+
+    a {
+        font-weight: 600;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: space-between;
+        list-style: none;
+        /* text-decoration: none; */
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+
+
+    }
+
+
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    color: var(--groen);
+}
+
+
+/* EINDE LOGO'S */
+
+/* BEGIN BUTTONS */
+.btn-primair {
+    background-color: var(--groen);
+    color: white;
+    padding: 8px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 7px;
+    font-size: 14px;
+    width: fit-content;
+
+}
+
+.btn-primair:hover,
+.btn-primair:focus {
+    background-color: var(--donkergroen);
+    transition: 0.3s;
+}
+
+.btn-primair-small {
+    background-color: var(--groen);
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+.btn-primair-small:hover,
+.btn-primair-small:focus {
+    background-color: var(--donkergroen);
+    transition: 0.3s;
+}
+
+.btn-tertiair {
+    grid-column-start: 2;
+    text-align: center;
+
+    a {
+        color: var(--donkergroen);
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
+
+.btn-tertiair:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f061";
+    display: inline-block;
+    padding-left: 15px;
+    color: var(--donkergroen);
+}
+
+.btn-tertiair a:hover,
+.btn-primair-small:focus {
+    color: var(--groen);
+}
+
+/* EINDE BUTTONS */
+
+.featured-half-img {
+    height: 250px;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 30px;
+
+    @media (min-width: 768px) {
+        height: 450px;
+    }
+}
+
+.home-nieuws h2 {
+    text-align: center;
+}
+
+.nieuws-cards {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 35px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.nieuws-card {
+    background: white;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px rgba(52, 113, 114, 0.2);
+
+    p {
+        color: #484848;
+        font-size: 16px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 768px) {
+        width: 100%;
+        height: 30em;
+
+    }
+}
+
+.nieuws-card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.nieuws-card .panel {
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.btn-primair-small,
+.nieuws-datum {
+    position: absolute;
+    bottom: 5%;
+}
+
+.btn-primair-small {
+    left: 5%;
+}
+
+.nieuws-datum {
+    right: 5%;
+}
+
+.ft-half-acc {
+    margin-top: 10px;
+    transition: height 3s ease-in;
+
+    @media (min-width: 768px) {
+        max-width: 700px;
+    }
+}
+
+.acc-title {
+    background-color: var(--donkergroen);
+    color: white;
+    padding: 1em;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+
+.acc-content {
+    /* max-height: 0px; */
+    overflow: hidden;
+    background-color: white;
+    padding: 2em;
+    border-radius: 0 0 15px 15px;
+}
+
+/* BEGIN SLIDER */
+.logos {
+    overflow: hidden;
+    padding: 40px 0;
+    /* background: transparent; */
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+/* Transparante overlay aan de zijkanten van de slider zodat de logo's erin verdwijnen */
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #FAF9F6);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #FAF9F6);
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 60s slide infinite linear;
+    mix-blend-mode: multiply;
+}
+
+.logos-slide img {
+    height: 60px;
+    margin: 0 40px;
+}
+
+/* EINDE SLIDER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--groen);
+    padding: 60px 15px;
+    gap: 45px;
+
+    h2 {
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 18px;
+        color: white;
+        margin-bottom: 7px;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+footer ul {
+    padding-left: 1.5em;
+
+    @media (min-width: 768px) {
+        padding-left: 0;
+    }
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 00;
+}
+
+footer .footer-col-01 p {
+    display: flex;
+    align-content: center;
+}
+
+footer .footer-col-01 p::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+    padding-right: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+footer .menu li {
+    list-style: none;
+    margin-bottom: 3px;
+}
+
+
+@keyframes slide {
+
+    /* Logo's bewegen horizontaal */
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* -------------------- OVER ONS PAGINA -------------------- */
+.bestuur-slider {
+    margin-top: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    /* @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    } */
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.bestuur-titles {
+    text-align: center;
+}
+
+.bestuur-image-area {
+    position: relative;
+}
+
+.bestuur-mail {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.bestuur-card {
+    width: 100%;
+    background: white;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(22, 92, 72, 0.1);
+    height: 100%;
+    transition: 0.3s;
+}
+
+.bestuur-card:hover {
+
+    @media (min-width: 768px) {
+        transform: translateY(-15px);
+        box-shadow: 0px 5px 20px rgba(22, 92, 72, 0.3);
+
+    }
+
+}
+
+
+
+.bestuur-image-area img {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bestuur-content {
+    padding: 20px 30px;
+
+    h5 {
+        margin-bottom: 10px;
+    }
+}
+
+.bestuur-mail {
+    background-color: var(--donkergroen);
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+}
+
+.bestuur-mail:hover,
+.bestuur-mail:focus {
+    background-color: var(--groen);
+    transition: 0.2s;
+}
