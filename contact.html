@@ -7,20 +7,20 @@
     <title>Over ons | Overlegplatform Associate degree</title>
 
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://isaaceswa.github.io/look-and-feel-styleguide/styleguide-ad-connect.css" <!-- DM
-        Sans font -->
+    <link rel="stylesheet" href="https://isaaceswa.github.io/look-and-feel-styleguide/styleguide-ad-connect.css">
+    <!-- DM Sans font 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">-->
 
-    <!-- Inter font -->
+    <!-- Inter font 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">-->
 
     <!-- Font Awesome 5 -->
     <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
@@ -74,7 +74,7 @@
         </div>
     </header>
     <main>
-        <section class="featured-half-rev">
+        <!-- <section class="featured-half-rev">
             <div class="featured-half-content">
                 <p class="subtitle">@</p>
                 <h2>Neem contact met ons op</h2>
@@ -97,6 +97,30 @@
                 <img src="assets/lachende-man.jpeg" alt="man die lacht" class="featured-half-img top-img">
 
             </div>
+        </section> -->
+
+        <section class="contact-section">
+            <form class="contact-form" aria-label="Contactformulier">
+                <label for="name">
+                    <p>Voornaam + achternaam</p>
+                    <input type="text" id="name" placeholder="Voer uw naam in" required>
+                </label>
+
+                <label for="email">
+                    <p>E-mailadres</p>
+                    <input type="email" id="email" placeholder="Voer uw e-mailadres in" required>
+                </label>
+
+                <label for="bericht">
+                    <p>Bericht</p>
+                    <input type="bericht" id="bericht" placeholder="Typ hier uw bericht" required>
+                </label>
+
+                <label for="textarea">
+                    <p>Bericht</p>
+                    <textarea name="textarea" id="textarea" placeholder="Typ hier uw bericht"></textarea>
+                </label>
+            </form>
         </section>
 
         <section class="bestuur-section">

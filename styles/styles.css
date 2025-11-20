@@ -196,11 +196,14 @@ header {
 }
 
 
+section
 
-.featured-half,
+/* ,
+/.featured-half,
 .home-nieuws,
 .featured-half-rev,
-.bestuur-section {
+.bestuur-section*/
+    {
     padding: var(--paddingsidesMobile);
     margin-top: 60px;
 
@@ -775,3 +778,38 @@ footer .menu li {
     background-color: var(--groen);
     transition: 0.2s;
 }
+
+/* ----------------- CONTACT PAGINA ----------------- */
+input {
+    /* appearance: none; */
+    background-repeat: no-repeat;
+    background-position: 1em center;
+    background-size: 1.5em auto;
+    padding-left: 3em !important;
+
+    &[id="name"] {
+        background-image: url("../assets/user-regular-full.svg");
+    }
+
+    &[id="email"] {
+        background-image: url("../assets/envelope-regular-full.svg");
+
+    }
+
+    &[id="bericht"] {
+        background-image: url("../assets/pen-to-square-regular-full.svg");
+        flex-grow: 1;
+    }
+}
+
+/* textarea {
+    background-repeat: no-repeat;
+    background-position: 1em 0.75em;
+    background-size: 1.5em auto;
+    padding-left: 3em !important;
+
+    &[id="bericht"] {
+        background-image: url("../assets/pen-to-square-regular-full.svg");
+        font-family: ;
+    }
+} */
