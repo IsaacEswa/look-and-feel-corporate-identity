@@ -780,12 +780,38 @@ footer .menu li {
 }
 
 /* ----------------- CONTACT PAGINA ----------------- */
-input {
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        flex-direction: row-reverse;
+        align-items: baseline;
+        gap: 7%;
+    }
+}
+
+.contact-section .contact-form {
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 75%;
+    }
+
+    @media (min-width: 1024px) {
+        width: 60%;
+    }
+}
+
+.contact-form input {
     /* appearance: none; */
     background-repeat: no-repeat;
     background-position: 1em center;
     background-size: 1.5em auto;
     padding-left: 3em !important;
+    margin-bottom: 1em;
 
     &[id="name"] {
         background-image: url("../assets/user-regular-full.svg");
@@ -799,6 +825,21 @@ input {
     &[id="bericht"] {
         background-image: url("../assets/pen-to-square-regular-full.svg");
         flex-grow: 1;
+    }
+}
+
+.contact-section .contact-information {
+    color: white;
+    background-color: var(--donkergroen);
+    padding: 20px 25px 80px;
+    border-radius: 20px;
+
+    h2 {
+        color: white;
+    }
+
+    @media (min-width: 1024px) {
+        width: 40%;
     }
 }
 
