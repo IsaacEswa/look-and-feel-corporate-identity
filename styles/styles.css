@@ -170,7 +170,8 @@ header {
     align-items: flex-start;
     justify-content: flex-start;
     padding-left: 20px;
-    padding-top: 30px;
+    padding-right: 15px;
+    padding-top: 25px;
     gap: 10px;
 }
 
@@ -315,8 +316,10 @@ section
 
 #close-icon {
     text-align: right;
-    padding-right: 15px;
+    /* padding-right: 15px; */
     margin-top: -5px;
+    display: flex;
+    align-self: end;
 }
 
 #close-icon,
