@@ -286,25 +286,6 @@ section
 
 }
 
-
-.nav-search {
-    padding: 13px;
-    border-radius: 25px;
-    border: none;
-    background: var(--groen);
-    color: white;
-}
-
-.nav-search::placeholder {
-    color: white;
-}
-
-.nav-search::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f002";
-}
-
-
 #hamburger-icon {
     text-align: right;
     list-style: none;
@@ -436,23 +417,21 @@ section
         color: var(--donkergroen);
         text-decoration: none;
         font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5em;
+        fill: var(--donkergroen);
+        transition: 0.3s;
     }
-}
-
-.btn-tertiair:after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f061";
-    /* arrow-right */
-    display: inline-block;
-    padding-left: 15px;
-    color: var(--donkergroen);
 }
 
 
 .btn-tertiair a:hover,
 .btn-primair-small:focus {
     color: var(--groen);
+    fill: var(--groen);
+    gap: 1em;
 }
 
 /* EINDE BUTTONS */
@@ -640,17 +619,18 @@ footer a {
     font-weight: 00;
 }
 
-footer .footer-col-01 p {
+footer .footer-col-01 a {
     display: flex;
-    align-content: center;
+    align-items: center;
+    gap: .5em;
+    fill: white;
+    transition: 0.3s;
+
 }
 
-footer .footer-col-01 p::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0e0";
-    padding-right: 10px;
-    color: white;
-    font-size: 18px;
+footer .footer-col-01 a:hover {
+    gap: 1em;
+    fill: currentColor;
 }
 
 footer .menu li {
