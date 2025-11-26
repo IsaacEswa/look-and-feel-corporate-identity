@@ -119,7 +119,7 @@ strong {
 a:hover,
 a:focus {
     color: #cccccc;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .subtitle {
