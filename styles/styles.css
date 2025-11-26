@@ -99,7 +99,7 @@ h3 {
 h3 {
     /* font-size: 18px; */
     /* font-weight: 600; */
-    color: var(--groen);
+    color: var(--primary-color-dark);
 }
 
 h5 {
@@ -345,12 +345,12 @@ section
 
 .navigation a:hover,
 .navigation a:focus {
-    color: var(--groen);
+    color: var(--primary-color-dark);
 }
 
 /* BEGIN BUTTONS */
 .btn-primair {
-    background-color: var(--groen);
+    background-color: var(--primary-color-dark);
     color: white;
     padding: 8px 23px;
     text-align: center;
@@ -370,7 +370,7 @@ section
 }
 
 .btn-primair-small {
-    background-color: var(--groen);
+    background-color: var(--primary-color-dark);
     color: white;
     padding: 5px 15px;
     text-align: center;
@@ -407,8 +407,8 @@ section
 
 .btn-tertiair a:hover,
 .btn-primair-small:focus {
-    color: var(--groen);
-    fill: var(--groen);
+    color: var(--primary-color-dark);
+    fill: var(--primary-color-dark);
     gap: 1em;
 }
 
@@ -564,7 +564,7 @@ section
 footer {
     display: flex;
     flex-direction: column;
-    background: var(--groen);
+    background: var(--primary-color-dark);
     padding: 60px 15px;
     gap: 45px;
 
@@ -730,7 +730,7 @@ footer .menu li {
 
 .team-mail:hover,
 .team-mail:focus {
-    background-color: var(--groen);
+    background-color: var(--primary-color-dark);
     transition: 0.2s;
 }
 
