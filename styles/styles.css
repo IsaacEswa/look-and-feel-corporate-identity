@@ -604,7 +604,7 @@ footer .footer-col-01 a {
 }
 
 footer .footer-col-01 a:hover {
-    gap: 1em;
+    /* gap: 1em; */
     fill: currentColor;
 }
 
