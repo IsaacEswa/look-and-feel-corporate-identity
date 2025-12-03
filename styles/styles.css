@@ -5,6 +5,8 @@
     --animationSpeed: 20s;
     --paddingsidesMobile: 0 15px;
     --paddingsidesTablet: 0 50px;
+    --buttonPadding: 8px 23px;
+    ;
 
 }
 
@@ -351,7 +353,7 @@ section
 .btn-primair {
     background-color: var(--primary-color-dark);
     color: white;
-    padding: 8px 23px;
+    padding: var(--buttonPadding);
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -429,6 +431,43 @@ section
     text-align: center;
 }
 
+.sort-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 0.5em;
+    font-size: 14px;
+    background: white;
+    /* border: .5px solid var(--primary-color-dark); */
+    /* background: none; */
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: var(--buttonPadding);
+    border-radius: 7px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.sort-button::before {
+    content: url('../assets/up-down-solid-full.svg');
+}
+
+.sort-button svg {
+    width: 1.5em;
+}
+
+.sort-button.sorted {
+    color: white;
+    background-color: var(--primary-color-dark);
+    fill: white;
+}
+
+.news-cards.sorted-on-date {
+    display: none;
+}
+
 .news-cards {
     /* display: flex; */
     display: grid;
@@ -442,6 +481,7 @@ section
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 
 .news-card {
     background: white;
